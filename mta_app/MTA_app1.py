@@ -46,7 +46,9 @@ def predict():
     # item = np.array([pclass, sex, age, fare, sibsp])
     # score = PREDICTOR.predict_proba(item)
     # results = {'survival chances': score[0,1], 'death chances': score[0,0]}
-    results = {'0i':1000,'0o':2000,'4i':1000,'4o':2500,'8i':1000,'8o':2000,'12i':1000,'12o':2000,'16i':1000,'16o':2300,'20i':1000,'20o':2000}
+    # results = {'0i':1000,'0o':2000,'4i':1000,'4o':2500,'8i':1000,'8o':2000,'12i':1000,'12o':2000,'16i':1000,'16o':2300,'20i':1000,'20o':2000}
+
+    results = {"in":{"0":1000,"4":1500,"8":1000,"12":1000,"16":1000,"20":1000,"24":1000},"out":{"0":1000,"4":1500,"8":1000,"12":1000,"16":1000,"20":1000,"24":1000}}
     return flask.jsonify(results)
 
 
